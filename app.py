@@ -30,6 +30,7 @@ st.title('Movie Recommendor System')
 
 selected_movie_name =st.selectbox('How would you liked to be contacted?',movies['title'].values)
 
+
 if st.button('Recommend'):
     recommendations =recommend_movie(selected_movie_name)
     st.text(recommendations[0])
